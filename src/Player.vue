@@ -88,8 +88,8 @@
     },
     watch: {
       playing(playing) {
-        this.seek = this.currentTrack.howl.seek()
-        let updateSeek
+        let updateSeek;
+        //this.seek = this.currentTrack.howl.seek();
         if (playing) {
           updateSeek = setInterval(() => {
             this.seek = this.currentTrack.howl.seek()
